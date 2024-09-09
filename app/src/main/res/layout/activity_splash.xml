@@ -1,95 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".view.splash.SplashActivity">
+    android:background="#FFFFFF">
 
-    <LinearLayout
-        android:id="@+id/logo"
-        android:layout_width="283dp"
-        android:layout_height="275dp"
-        android:layout_marginStart="75dp"
-        android:layout_marginTop="151dp"
-        android:orientation="vertical"
-        android:padding="43dp">
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="150dp"
+        android:src="@drawable/ic_splash"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <LinearLayout
-            android:id="@+id/imgLogo"
-            android:layout_width="170dp"
-            android:layout_height="196dp"
-            android:orientation="vertical"
-            android:padding="22dp">
+    <TextView
+        android:id="@+id/tvTitle"
+        style="@style/inter_semibold_600"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:text="@string/_600_c_u_h_i_blx"
+        android:textColor="@color/green1"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgLogo" />
 
-            <LinearLayout
-                android:id="@+id/img"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:orientation="vertical">
+    <TextView
+        android:id="@+id/tvDownloading"
+        style="@style/inter_light_300"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:text="@string/txt_downloading"
+        android:textColor="@color/green2"
+        android:textSize="11dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle" />
 
-                <LinearLayout
-                    android:id="@+id/topImg"
-                    android:layout_width="match_parent"
-                    android:layout_height="75dp"
-                    android:orientation="horizontal">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="370dp"
+        android:src="@drawable/ic_splash_2"
+        app:layout_constraintBottom_toBottomOf="parent" />
 
-                    <LinearLayout
-                        android:layout_width="75dp"
-                        android:layout_height="75dp"
-                        android:padding="7.5dp">
-
-                        <ImageButton
-                            android:layout_width="33.22dp"
-                            android:layout_height="50.24dp"
-                            android:src="@drawable/img1">
-
-
-                        </ImageButton>
-                    </LinearLayout>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/botImg"
-                    android:layout_width="match_parent"
-                    android:layout_height="75dp"
-                    android:orientation="horizontal">
-
-                </LinearLayout>
-
-            </LinearLayout>
-
-            <TextView
-                android:layout_width="170dp"
-                android:layout_height="24dp"
-                android:lineHeight="24dp"
-                android:text="@string/_600_c_u_h_i_blx"
-                android:textAlignment="center"
-                android:textColor="#205072"
-                android:textFontWeight="500"
-                android:textSize="19.79sp"
-                tools:ignore="UnusedAttribute" />
+    <com.example.learndrivinglicense2.base.view.SmoothSeekBar
+        android:id="@+id/processLoading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="10dp"
+        android:maxHeight="5dp"
+        android:minHeight="5dp"
+        android:progress="0"
+        android:progressDrawable="@drawable/seekbar_splash_progress"
+        android:splitTrack="false"
+        android:thumb="@drawable/seekbar_splash_custom_thumb"
+        app:layout_constraintTop_toBottomOf="@id/tvDownloading" />
 
 
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/textLogo"
-            android:layout_width="283dp"
-            android:layout_height="36dp"
-            android:orientation="vertical">
-
-        </LinearLayout>
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/bottomView"
-        android:layout_width="397dp"
-        android:layout_height="362dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="524dp"
-        android:orientation="vertical">
-
-    </LinearLayout>
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

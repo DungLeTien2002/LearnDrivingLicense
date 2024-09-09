@@ -2,4 +2,19 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!--green-->
+    <color name="green1">#205072</color>
+    <color name="green2">#329D9C</color>
+    <color name="green3">#56C596</color>
+    <color name="green4">#7BE495</color>
+    <color name="green5">#C6E9CA</color>
+    <color name="green6">#05FF00</color>
+
+    <!--gray-->
+    <color name="gray1">#E1E1E1</color>
+    <color name="gray2">#F5F5F5</color>
+
+    <color name="red">#FF0000</color>
+    <color name="yellow">#FFF500</color>
 </resources>
