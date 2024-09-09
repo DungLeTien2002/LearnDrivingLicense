@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">LearnDrivingLicense2</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+
+    <string name="_600_c_u_h_i_blx">600 câu hỏi BLX</string>
+</resources>

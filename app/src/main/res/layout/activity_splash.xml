@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.splash.SplashActivity">
+
+    <LinearLayout
+        android:id="@+id/logo"
+        android:layout_width="283dp"
+        android:layout_height="275dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="151dp"
+        android:orientation="vertical"
+        android:padding="43dp">
+
+        <LinearLayout
+            android:id="@+id/imgLogo"
+            android:layout_width="170dp"
+            android:layout_height="196dp"
+            android:orientation="vertical"
+            android:padding="22dp">
+
+            <LinearLayout
+                android:id="@+id/img"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/topImg"
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:padding="7.5dp">
+
+                        <ImageButton
+                            android:layout_width="33.22dp"
+                            android:layout_height="50.24dp"
+                            android:src="@drawable/img1">
+
+
+                        </ImageButton>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/botImg"
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="170dp"
+                android:layout_height="24dp"
+                android:lineHeight="24dp"
+                android:text="@string/_600_c_u_h_i_blx"
+                android:textAlignment="center"
+                android:textColor="#205072"
+                android:textFontWeight="500"
+                android:textSize="19.79sp"
+                tools:ignore="UnusedAttribute" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/textLogo"
+            android:layout_width="283dp"
+            android:layout_height="36dp"
+            android:orientation="vertical">
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomView"
+        android:layout_width="397dp"
+        android:layout_height="362dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="524dp"
+        android:orientation="vertical">
+
+    </LinearLayout>
+</LinearLayout>
