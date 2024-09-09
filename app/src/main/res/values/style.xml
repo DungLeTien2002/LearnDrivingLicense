@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="inter_light_300" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/inter_light_300</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="inter_regular_400" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/inter_regular_400</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="inter_medium_500" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/inter_medium_500</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="inter_semibold_600" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/inter_semi_bold_600</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+</resources>
